@@ -1,0 +1,9 @@
+create table dlithe.dbo.DEPARTMENTD
+(
+DEPT_NO INT,
+DEPT_NAME VARCHAR(20),
+LOCATION VARCHAR(15),
+PRIMARY KEY (DEPT_NO)
+);
+select * from DEPARTMENTD 
+insert into DEPARTMENTD values(80,'virat','bangalore');
