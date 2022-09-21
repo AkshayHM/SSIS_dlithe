@@ -1,0 +1,11 @@
+
+---------aggreagte function----------
+select sum(salary) from dbo.S_HREMPLOYEES sh ;
+----------avg----------------
+select avg(salary) from dbo.S_HREMPLOYEES sh ;
+----------count-----------
+select count(salary) from dbo.S_HREMPLOYEES sh ;
+--------max-------------------
+select max(salary),min(salary) from dbo.S_HREMPLOYEES sh ;
+------min-------------------
+select min(salary) from dbo.S_HREMPLOYEES sh ;
