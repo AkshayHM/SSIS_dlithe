@@ -1,0 +1,23 @@
+--------top 10-------------
+select top 10 * from dlithe.dbo.S_HREMPLOYEES 
+-------upper---------------
+select upper(FIRST_NAME) from dlithe.dbo.S_HREMPLOYEES 
+--------lower-------------
+select LOWER(FIRST_NAME) from dlithe.dbo.S_HREMPLOYEES 
+------trim----------------
+select trim ('com' from 'gmail.com')  
+-----l trim---------------
+select ltrim('akshay hiremath')
+-------substring--------
+select substring ('virat kohli',1,4)as FIRST_NAME from dbo.S_HREMPLOYEES sh ;
+-----char index--------------
+select charindex('k','virat kohli',1)as chrind from dbo.S_HREMPLOYEES sh;
+-----replace-----------------
+select replace ('virat kohli','kohli','king')from dbo.S_HREMPLOYEES sh
+------len-----------------
+select len ('akshay hiremath')from dbo.S_HREMPLOYEES sh
+------case when-------------------
+select DEPARTMENT_ID ,
+CASE when DEPARTMENT_ID >200 then 'it is great'
+when DEPARTMENT_ID =200 then 'it is less'
+from dbo.S_HREMPLOYEES sh
