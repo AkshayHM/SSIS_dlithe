@@ -1,0 +1,21 @@
+create table product_new1
+(
+p_id int,
+p_name varchar(50),
+p_cost float
+);
+
+insert into product_new1 
+values (100,'campus',10000),
+(200,'bata',20000),
+(300,'nike',30000)
+
+update product_new1 
+set p_name='Puma'
+where p_id=100
+
+delete from product_new1 
+where p_id=200;
+
+truncate table product_new1;
+drop table product_new1;
