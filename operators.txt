@@ -1,0 +1,36 @@
+-----equal------
+select * from dlithe.dbo.S_HREMPLOYEES 
+where employee_id=200;
+-----is greater than or equal to----
+select * from dlithe.dbo.S_HREMPLOYEES 
+where employee_id>=200;
+-------is less than or equal to-----
+select * from dlithe.dbo.S_HREMPLOYEES 
+where employee_id<=100;
+--------is not equal to----------
+select * from dlithe.dbo.S_HREMPLOYEES 
+where employee_id=100;
+---------or operator ----------
+select * from dlithe.dbo.S_HREMPLOYEES 
+where employee_id=200 or employee_id=220;
+--------and operator-------
+select * from dlithe.dbo.S_HREMPLOYEES 
+where employee_id=100 and FIRST_NAME='steven';
+--------between operator--------
+select * from dlithe.dbo.S_HREMPLOYEES 
+where EMPLOYEE_ID BETWEEN 100 and 200;
+-------like operator----------
+select * from dlithe.dbo.S_HREMPLOYEES 
+where FIRST_NAME like'%s' and LAST_NAME like 'm%';
+--------not like operator----------------
+select * from dlithe.dbo.S_HREMPLOYEES 
+where FIRST_NAME like'%s' and LAST_NAME not like 'm%';
+--------is null---------------
+select * from dlithe.dbo.S_HREMPLOYEES 
+where DEPARTMENT_ID is NULL ;
+---------is not null--------------
+select * from dlithe.dbo.S_HREMPLOYEES 
+where DEPARTMENT_ID is not NULL ;
+---------in operator----------
+select * from dlithe.dbo.S_HREMPLOYEES 
+where DEPARTMENT_ID in (200,300,100) ;
