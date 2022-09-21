@@ -1,0 +1,61 @@
+create table employees18(
+emp_id int,
+emp_name varchar(50),
+zip_code int
+);
+select * from employees18;
+
+insert into employees18
+values (1,'sam',583225),
+(2,'david',583201),
+(3,'ronny',583223),
+(4,'steve',583222),
+(5,'sammy',583221);
+
+create table zip
+(
+zip_code int,
+city varchar(50),
+country varchar(50)
+);
+
+select * from zip;
+truncate table zip;
+
+insert into zip
+values (583225,'hospet','India'),
+(583201,'california','US'),
+(583223,'peru','Brazil'),
+(583222,'colombia','SL');
+
+
+
+
+----left join--------
+select emp.emp_id ,emp.emp_name,emp.zip_code,z.zip_code,z.city,z.country
+from
+employees18 as emp
+left join zip as z
+on emp.zip_code = z.zip_code
+-----right join----------
+select emp.emp_id ,emp.emp_name,emp.zip_code,z.zip_code,z.city,z.country
+from
+employees18 as emp
+right join zip as z
+on emp.zip_code = z.zip_code
+-----inner join------------
+select emp.emp_id ,emp.emp_name,emp.zip_code,z.zip_code,z.city,z.country
+from
+employees18 as emp
+inner join zip as z
+on emp.zip_code = z.zip_code
+-----full join---------------
+select emp.emp_id ,emp.emp_name,emp.zip_code,z.zip_code,z.city,z.country
+from
+employees18 as emp
+full join zip as z
+on emp.zip_code = z.zip_code
+----cross join------------
+select emp.emp_id ,emp.emp_name,emp.zip_code,z.zip_code,z.city,z.country
+from
+employees18 as emp, zip as z
