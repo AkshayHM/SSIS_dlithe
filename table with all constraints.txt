@@ -1,0 +1,10 @@
+create table dlithe.dbo.b_bank
+(
+bank_no int not null unique,
+bank_name varchar(20),
+bank_branch varchar(20),
+bank_phno int,
+primary key (bank_no)
+);
+select * from b_bank
+insert into b_bank values(777,'sbi','agra',08674);
