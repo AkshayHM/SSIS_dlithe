@@ -1,0 +1,26 @@
+-----constraints-------------
+
+create table Table18(
+id int,
+name varchar(100),
+age int,
+inserted_date date
+);
+
+select * from Table18;
+
+insert into Table18
+values (1,'David',20,'2022-09-21',100);
+
+alter table Table18
+add dept_id int;
+
+create table Dept18(
+dept_id int,
+dept_name varchar(50)
+);
+select * from Dept18;
+
+insert into department18 
+values (100, 'Sales Manager')
+
