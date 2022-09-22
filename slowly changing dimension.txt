@@ -1,0 +1,23 @@
+------slowly changing dimension----------------
+
+create table asn_18
+(
+id int,
+name varchar(50),
+address varchar(50)
+);
+select * from asn_18;
+
+insert into asn_18
+values (1,'sam','sydney'),
+(2,'david','brisbane'),
+(3,'steven','melbourne');
+
+----target table ----------
+create table asn_19
+(
+id int,
+name varchar(50),
+address varchar(50)
+);
+select * from asn_19;
