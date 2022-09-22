@@ -1,0 +1,75 @@
+-----    Normalisation-----------------
+------------1NF------ 
+     CREATE table employess18
+     (
+     emp_name varchar(50),
+     emp_id int,
+     emp_salary float
+     )
+     
+     insert into employess18 values ('david',1,20000.0)
+      insert into employess18 values ('kohli,kohli',2,20000)
+
+create table employess19
+(  emp_name varchar(50),
+   emp_id int,
+   emp_salary float
+)
+ insert into employess19 values ('kohli',1,20000.0),('king',1,20000.0)
+  insert into employess19 values ('akshay',2,30000.6);
+
+select * from employess18;
+select * from employess19;
+---------2NF-----------
+ CREATE table employess20
+     (
+     emp_name varchar(50) primary key,
+     emp_id int,
+     emp_salary float,
+     dept_id int
+     );
+    insert into employess20 
+    values('sammy',1,20000.3,100),
+    ('dhoni',2,20000.3,101),
+    ('sam',3,20000.3,106);
+   
+    
+ create table deptment(
+dept_id int,
+dept_name varchar(10)
+);
+
+insert into deptment 
+values (101,'Head'),
+(101,'HR'),
+(106,'Ceo');
+     select * from employess20;
+    select * from deptment;
+------3NF-------------
+
+create table studentss18
+(
+stu_id int,
+name varchar(50),
+subid int,
+sub varchar(50),
+address varchar(50)
+);
+insert into studentss18
+values (1,'arun',11,'english','hubli'),
+(2,'joe',12,'social','mysore'),
+(3,'root',13,'science','beng'),
+(4,'cook',11,'english','hubli');
+
+select * from studentss18;
+
+create table studentss19
+(
+subid int,
+sub varchar(50)
+);
+insert into studentss19
+values (11,'english'),
+(12,'social'),
+(13,'science');
+select * from studentss19;
