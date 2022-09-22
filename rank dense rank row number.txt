@@ -1,0 +1,24 @@
+-------Rank/Dense Rank/Row---------------
+create table employes18
+(
+emp_id int,
+emp_name varchar(50),
+emp_mobile varchar(50),
+emp_salary float,
+dept_id varchar(50)
+);
+select * from employes18;
+
+select [emp_id],[emp_name],[emp_mobile],[emp_salary],[dept_id],
+ROW_number()OVER (ORDER BY emp_id) as Rownumber,
+rank()over (order by emp_id) as Rankfn,
+dense_rank()over (order by emp_id) as DenseRankFn
+from dbo.employes18;
+
+
+insert into employes18 values (1,'kohli',1231231231,10000.8,1),
+ (2,'king1',1231231231,10000.8,2),
+  (5,'virat2',1231231231,20000.8,3),
+   (5,'virat3',1231231231,30000.8,4),
+    (4,'virat4',1231231231,40000.8,5),
+      (4,'virat4',1231231231,40000.8,5);
