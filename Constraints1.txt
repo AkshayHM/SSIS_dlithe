@@ -1,0 +1,82 @@
+----NOT NULL------------
+
+create table Table18(
+id int not null,
+name varchar(100),
+age int,
+inserted_date date
+);
+insert into Table18
+values ('David',20,'2022-09-21',100);
+
+----PRIMARY KEY--------
+create table Table19(
+id int not null primary key,
+name varchar(100),
+age int,
+inserted_date date,
+dept_id int
+);
+select * from Table19;
+
+insert into Table19
+values (1,'sammy',20,'2022-9-21',100),
+(2,'jonny',15,'2022-9-22',101),
+(3,'russel',25,'2022-9-23',102),
+(4,'mendis',28,'2022-9-24',103);
+
+create table Dept19
+(
+dept_id int primary key,
+dept_name varchar(50)
+);
+select * from Dept19;
+
+insert into Dept19
+values (100,'Sales'),(101,'Accounts'),(102,'HR'),(103,'Executive');
+
+alter table Table19
+add constraint FK_DEPT_ID1
+foreign key (dept_id)
+references Dept19(dept_id)
+
+insert into Dept19
+values (104,'Head');
+
+create table empl(
+id int primary key,
+name varchar(100),
+age int check (age>=18),
+inserted_date date DEFAULT getdate()
+);
+
+select * from empl;
+
+insert into empl
+values (1,'Sam',18,);
+-----unique key------------
+
+create table Dept20
+(
+dept_id int  not null unique,
+dept_name varchar(50),
+dept_no int 
+);
+select * from Dept20;
+truncate table Dept20;
+
+insert into Dept20 values
+(1,'HR',100),
+(2,'sales',100),
+(3,'ceo',100);
+
+create table empl18 (
+id int primary key,
+name varchar(50),
+age int,
+inserted_date date default getdate()
+);
+select * from empl18;
+
+insert into empl18  
+values (1,'Akshay',18, );
