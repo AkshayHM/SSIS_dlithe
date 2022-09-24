@@ -165,6 +165,14 @@ select * from employee;
 select * from dept;
 
 create table emp;//creation
+
+
+
+
+
+
+
+
 -------------------------------------------------------------------
 
 
