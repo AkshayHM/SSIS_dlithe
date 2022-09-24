@@ -164,6 +164,7 @@ update dept set dept_id=4 where dept_Name='Design';
 select * from employee;
 select * from dept;
 
+create table emp;//creation
 -------------------------------------------------------------------
 
 
