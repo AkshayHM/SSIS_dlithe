@@ -1,0 +1,25 @@
+Quiz answers
+
+1) SELECT employee_id,DEPARTMENT_ID
+    from DBO.S_HREMPLOYEES
+    where DEPARTMENT_ID in (10,20);
+
+2)  OUTPUT = 501
+
+3)  OUTPUT = NULL
+
+4)  ALL OPTIONS ARE CORRECT
+
+
+5) B) ||
+
+6)  SELECT ename, job , sal + 100 AS newsal FROM emp
+
+7) NULL
+
+8) B) NULL IS NO VALUE OR UNKNOWN VALUE
+   D) NULL IS NOT SAME AS 0
+9) D) 85
+
+10) C) SELECT ename, sal +1000 FROM emp;
+          
