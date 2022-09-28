@@ -166,9 +166,17 @@ select * from dept;
 
 create table emp;//creation
 
+select * from tgt_joiner;
+select * from asn_20;
 
+select * from Target16;
 
+select * from tgt_joiner181;
 
+select * from target_1818;
+
+select * from router1;
+ select * from router2;
 
 
 
