@@ -181,11 +181,6 @@ select * from router1;
 SELECT 
 DENSE_RANK() OVER (partition by Department_id order by salary DESC) AS D_RANK,DEPARTMENT_ID,Employee_ID,salary
 FROM s_hremployeeS;
-
-
-
-
-
 -------------------------------------------------------------------
 create table 
 
