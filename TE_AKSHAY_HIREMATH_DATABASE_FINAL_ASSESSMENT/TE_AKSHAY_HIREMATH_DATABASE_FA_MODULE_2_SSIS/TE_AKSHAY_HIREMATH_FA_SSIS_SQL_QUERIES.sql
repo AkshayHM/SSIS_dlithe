@@ -1,3 +1,4 @@
+----Creating Target table as per given Cinema Ticket data source
 create table TE_FA_Cinema_Ticket_Target
 (
 Film_Type varchar(250),
