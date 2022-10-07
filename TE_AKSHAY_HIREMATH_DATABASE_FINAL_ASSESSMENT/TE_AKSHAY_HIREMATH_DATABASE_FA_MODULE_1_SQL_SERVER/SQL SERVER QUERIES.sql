@@ -307,7 +307,7 @@ delete from  TE_FA_Covid_Healthcare_details where Provider_Id=10001;
 
 select * from TE_FA_Covid_Healthcare_details;
 
-
+select count(*)from TE_FA_Covid_Healthcare_details;
 
 
 
