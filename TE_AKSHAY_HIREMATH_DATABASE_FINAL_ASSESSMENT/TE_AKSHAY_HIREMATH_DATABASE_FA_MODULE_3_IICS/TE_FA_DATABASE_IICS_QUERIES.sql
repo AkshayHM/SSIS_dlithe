@@ -13,3 +13,5 @@ Hospital_Ph_no bigint
 );
 alter  table TE_FA_Hospital_details_iics
 add   Check_sum int;
+
+SELECT * FROM AGGREGATE_PROVIDER_IICS;
