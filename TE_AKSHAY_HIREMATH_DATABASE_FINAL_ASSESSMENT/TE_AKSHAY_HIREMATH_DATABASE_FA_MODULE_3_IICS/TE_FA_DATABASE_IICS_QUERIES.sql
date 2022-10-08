@@ -40,6 +40,7 @@ select * from TE_FA_Covid_HealthCare_LK;
 
 update TE_FA_Covid_Healthcare_details set DRG_ID=40 where Provider_Id=10001;
 
+
 create table TE_FA_Cinema_Ticket_Destination
 (
 dimension_key int,
@@ -49,7 +50,7 @@ cinema_code varchar(250),
 total_sales int,
 tickets_sold int,
 tickets_out	int,
-show_time time,
+show_time varchar(250),
 occu_perc varchar(250),
 ticket_price float,
 ticket_use	int,
@@ -60,12 +61,19 @@ show_quarter int,
 show_day varchar(250),
 check_sum varchar(100)
 );
+select * from TE_FA_Cinema_Ticket tfct ;
 select * from TE_FA_Cinema_Ticket_Destination
 
-alter table TE_FA_Cinema_Ticket_Destination
-add start_date date;
-alter table TE_FA_Cinema_Ticket_Destination
-add end_date date;
+drop table TE_FA_Cinema_Ticket_Destination;
+
+alter table TE_FA_Cinema_Ticket
+alter column show_time int;
+
+update TE_FA_Cinema_Ticket
+set tickets_sold=50 where capacity=610;
+
+select * from SF_TE_FA_Cinema_Ticket
+
 
 
 
